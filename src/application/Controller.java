@@ -30,12 +30,12 @@ private Label error;
 		
 	
 		if(username.getText().toString().equals("1") && password.getText().toString().equals("1")) {
-			Stage stage1 = (Stage) username.getScene().getWindow();
-			stage1.close();
+			Stage stage = (Stage) username.getScene().getWindow();
+			stage.close();
 			Parent root = FXMLLoader.load(getClass().getResource("Menu.fxml"));
 			Scene scene = new Scene(root);
-			stage1.setScene(scene);
-			stage1.show();
+			stage.setScene(scene);
+			stage.show();
 			
 		}
 		else if(username.getText().isEmpty() && !password.getText().isEmpty()) {
