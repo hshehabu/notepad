@@ -1,0 +1,4 @@
+12	eq	ew			
+32	amie	42							
+12	da	21	
+12	ddsd	dsd	
