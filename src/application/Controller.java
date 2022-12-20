@@ -13,7 +13,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import java.sql.*;
+
+
 public class Controller {
 @FXML
 private Button submit;
@@ -25,13 +26,18 @@ private TextField username;
 private PasswordField password;
 @FXML
 private Label error;
-	
+
+String uname , pword;
+Controller(String username , String password){
+	this.uname = username;
+	this.pword = password;
+}
 	public void submit(ActionEvent e) throws IOException {
 		
 	
-		if(username.getText().toString().equals("1") && password.getText().toString().equals("1")) {
+		if(username.getText().toString().equals(uname) && password.getText().toString().equals(pword)) {
 			Stage stage = (Stage) username.getScene().getWindow();
-			stage.close();
+//			stage.close();
 			Parent root = FXMLLoader.load(getClass().getResource("Menu.fxml"));
 			Scene scene = new Scene(root);
 			stage.setScene(scene);

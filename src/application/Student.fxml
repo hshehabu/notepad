@@ -29,13 +29,14 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <TextField fx:id="student_id" layoutX="201.0" layoutY="123.0" prefHeight="36.0" prefWidth="204.0" />
+      <TextField fx:id="student_id" layoutX="201.0" layoutY="123.0" onAction="#view" prefHeight="36.0" prefWidth="204.0" />
       <TextField fx:id="student_name" layoutX="201.0" layoutY="179.0" prefHeight="36.0" prefWidth="204.0" />
       <TextField fx:id="student_grade" layoutX="201.0" layoutY="240.0" prefHeight="36.0" prefWidth="204.0" />
       <Button layoutX="107.0" layoutY="336.0" mnemonicParsing="false" onAction="#cancel" prefHeight="36.0" prefWidth="83.0" text="Cancel" />
       <Button layoutX="259.0" layoutY="336.0" mnemonicParsing="false" onAction="#save" prefHeight="36.0" prefWidth="83.0" text="Save" />
       <Button layoutX="422.0" layoutY="336.0" mnemonicParsing="false" onAction="#view" prefHeight="36.0" prefWidth="72.0" text="VIew" />
       <Accordion layoutX="350.0" layoutY="111.0" />
-      <Label fx:id="error" layoutX="190.0" layoutY="300.0" prefHeight="28.0" prefWidth="269.0" textFill="#ee0a0a" />
+      <Button fx:id="logout" layoutX="511.0" layoutY="30.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+      <Label fx:id="error" layoutX="289.0" layoutY="306.0" textFill="#f80303" />
    </children>
 </AnchorPane>

@@ -1,4 +1,5 @@
-12	eq	ew			
-32	amie	42							
-12	da	21	
-12	ddsd	dsd	
+12	hamza	3.9	
+0098	hamza	3.89	
+		
+43	hamza	3.0	
+90	hamzashehabu	3.0	
