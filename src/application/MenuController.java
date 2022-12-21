@@ -17,6 +17,7 @@ public class MenuController {
 	private Button filepicker;
 	@FXML
 	private Button logout;
+	
  public void studentManagement(ActionEvent e) {
 	 Stage stage = (Stage) student.getScene().getWindow();
 		try {
@@ -32,6 +33,7 @@ public class MenuController {
 	
  }
  public void filePicker(ActionEvent e) {
+	 
 	 Stage stage = (Stage) filepicker.getScene().getWindow();
 	 try {
 		Parent root = FXMLLoader.load(getClass().getResource("File.fxml"));

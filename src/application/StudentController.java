@@ -118,10 +118,8 @@ public class StudentController {
     public void logout() {
    	 Stage stage = (Stage) logout.getScene().getWindow();
    	 try {
-   		 Controller controller = new Controller(null,null);
-   		 FXMLLoader loader = new FXMLLoader(getClass().getResource("Main.fxml"));
-   		 loader.setController(controller);
-   		Scene scene = new Scene(loader.load());
+   		Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
+   		Scene scene = new Scene(root);
    		stage.setScene(scene);
    		stage.show();
    	} catch (IOException ex) {
